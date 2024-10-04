@@ -1,0 +1,176 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\begin{document}
+	
+	\section{LaTeX}
+	LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is widely used in academia for the communication and publication of scientific documents in many fields, including mathematics, computer science, engineering, physics, chemistry, economics, and political science.
+	
+	\subsection{Coloured Text}
+	\textcolor{blue}{Introduction}
+	
+	This is the introduction section, highlighted in blue.
+	
+	\textcolor{red}{Methodology}
+	
+	This section discusses the methodology, highlighted in red.
+	
+	\textcolor{green}{Results}
+	
+	This section presents the results, highlighted in green.
+	
+	\subsection{Special Characters}
+	LaTeX allows you to include special characters such as:
+	\begin{itemize}
+		\item Dollar sign: \$
+		\item Ampersand: \&
+		\item Percent: \%
+		\item Hash: \#
+	\end{itemize}
+	
+	\subsection{Including Figures}
+	To include figures, you first need to upload the image file named \texttt{sample-image.jpg} from your computer using the upload link in the file-tree menu. Then use the \texttt{includegraphics} command to include it in your document.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{csk.png}
+		\caption{This is a sample image.}
+	\end{figure}
+	
+	\subsection{Creating Tables}
+	Use the \texttt{table} and \texttt{tabular} environments for basic tables. Here’s an example:
+	
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Item & Quantity & Price \\
+			\hline
+			Apples & 10 & \$1.50 \\
+			Oranges & 5 & \$2.00 \\
+			\hline
+		\end{tabular}
+		\caption{An example table with 3 columns.}
+	\end{table}
+	
+	\subsection{Mathematical Expressions}
+	LaTeX excels at typesetting mathematics. Here is the quadratic formula inline: \(ax^2 + bx + c = 0\). Displayed version:
+	
+	\[
+	x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+	\]
+	
+	Sine and Cosine Addition Formulas:
+	
+	\[
+	\sin(a + b) = \sin a \cos b + \cos a \sin b
+	\]
+	
+	\[
+	\cos(a + b) = \cos a \cos b - \sin a \sin b
+	\]
+	
+	Displayed version:
+	
+	\[
+	\int_a^b f(x) \, dx
+	\]
+	
+	Binomial Theorem:
+	
+	\[
+	(a + b)^n = \sum_{k=0}^n \binom{n}{k} a^{n-k} b^k
+	\]
+	
+	\subsection{Lists}
+	You can make lists with automatic numbering:
+	
+	\begin{enumerate}
+		\item First item,
+		\item Second item,
+		\item Third item.
+	\end{enumerate}
+	
+	You can also use bullet points with colored text:
+	
+	\begin{itemize}
+		\item \textcolor{magenta}{This text is magenta.}
+		\item \textcolor{yellow}{This text is yellow.}
+		\item \textcolor{black}{This text is black.}
+		\item \textcolor{gray}{This text is gray.}
+		\item \textcolor{white}{This text is white.}
+	\end{itemize}
+	
+	\subsection{Hyperlinks}
+	For more information, visit the 
+	
+	\subsection{Bibliography}
+	To include references, you can use BibTeX. Here is an example citation \cite{Doe24}.
+	
+	\bibliographystyle{plain}
+	\bibliography{references}
+	
+\end{document}
+
+
+
+%import matplotlib.pyplot as plt
+%%import numpy as np
+%import matplotlib.image as mpimg
+%
+%# Load and display the original image
+%image_path = "/home/rgukt-basar/Downloads/man3.jpg"
+%image = mpimg.imread(image_path)
+%
+%# Create the sine wave
+%x = np.linspace(0, 10, 100)
+%y = np.sin(x)
+%
+%# Create the plot
+%fig, ax = plt.subplots()
+%ax.imshow(image, extent=[0, 10, -1, 1])
+%ax.plot(x, y, 'r-', linewidth=2)
+%
+%# Set the axis labels and limits
+%ax.set_xlim(0, 10)
+%ax.set_ylim(-1, 1)
+%ax.set_xlabel('X-axis')
+%ax.set_ylabel('Y-axis')
+%
+%# Show the plot
+%plt.show()
+
+
+
+
+
+
+%import numpy as np
+%import matplotlib.pyplot as plt
+%
+%# Data for plotting
+%x = np.linspace(0, 10, 100)
+%y1 = np.sin(x)
+%y2 = np.cos(x)
+%
+%# Plotting
+%plt.figure(figsize=(10, 5))
+%
+%plt.subplot(1, 2, 1)
+%plt.plot(x, y1, label='sin(x)')
+%plt.title('Sine Wave')
+%plt.xlabel('x')
+%plt.ylabel('sin(x)')
+%plt.legend()
+%
+%plt.subplot(1, 2, 2)
+%plt.plot(x, y2, label='cos(x)', color='r')
+%plt.title('Cosine Wave')
+%plt.xlabel('x')
+%plt.ylabel('cos(x)')
+%plt.legend()
+%
+%plt.tight_layout()
+%plt.show()
